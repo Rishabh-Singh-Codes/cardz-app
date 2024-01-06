@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "cardName": "Salary Card",
+      "bankName": "Universal Bank",
+      "cardNumber": "5489 7452 5726 9827",
+      "cvv": "123",
+      "date": "04/24",
+      "balance": "$2,748.03",
+      "theme": "blue"
+    },
+    {
+      "id": 2,
+      "cardName": "Personal Card",
+      "bankName": "City Bank",
+      "cardNumber": "7452 9827 5489 5726",
+      "cvv": "789",
+      "date": "02/25",
+      "balance": "$8,321.40",
+      "theme": "orange"
+    },
+    {
+        "id": 3,
+        "cardName": "Travel Card",
+        "bankName": "Deutsche Bank",
+        "cardNumber": "9827 7452 5489 5726",
+        "cvv": "456",
+        "date": "02/25",
+        "balance": "$8,321.40",
+        "theme": "blue"
+      }
+  ]
+}

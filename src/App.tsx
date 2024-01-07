@@ -1,13 +1,9 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-// import CardDetails from "./pages/CardDetails";
-// import Catalogue from "./pages/Catalogue";
-// import History from "./pages/History";
 import Home from "./pages/Home";
 import Splash from "./pages/Splash";
 
-const CardDetails = lazy(() => import("./pages/CardDetails"));
 const Catalogue = lazy(() => import("./pages/Catalogue"));
 const History = lazy(() => import("./pages/History"));
 
@@ -31,15 +27,6 @@ const appRouter = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/card",
-        // element: <CardDetails />,
-        element: (
-          <Suspense fallback={<Splash />}>
-            <CardDetails />
-          </Suspense>
-        ),
-      },
-      {
         path: "/catalogue",
         element: (
           <Suspense fallback={<Splash />}>
@@ -49,7 +36,6 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/history",
-        // element: <History />,
         element: (
           <Suspense fallback={<Splash />}>
             <History />
@@ -61,9 +47,6 @@ const appRouter = createBrowserRouter([
 ]);
 
 const App = () => {
-  // return  <BrowserRouter>
-  // <RouterProvider router={appRouter} />;
-  // </BrowserRouter>
   return <RouterProvider router={appRouter} />;
 };
 

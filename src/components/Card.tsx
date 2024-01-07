@@ -1,7 +1,5 @@
 import BlueBg from "../assets/blue-bg.svg";
 import OrangeBg from "../assets/orangeBg.svg";
-// import OrangeBg from "../assets/orangeBg.jpeg";
-// import OrangeBg from "../assets/orangeBg.png";
 import wifi from "../assets/wifi.svg";
 import mastercard from "../assets/mastercard.svg";
 import { useState } from "react";
@@ -37,11 +35,10 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div
-      className={`rounded-2xl h-48 ${showCVV === false && "p-4"}`}
+      className={`rounded-2xl h-48 ${showCVV === false && "p-4"} w-[320px]`}
       style={{
         backgroundImage: `url(${theme==="blue" ? BlueBg : OrangeBg})`,
         backgroundRepeat: "no-repeat",
-        // backgroundRepeat: `${theme==="orange" ? "repeat": "no-repeat"}`,
         minWidth: "100%",
       }}
       onMouseDown={(e) => handleMouseDown(e)}
